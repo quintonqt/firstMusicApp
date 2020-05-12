@@ -1,0 +1,58 @@
+:root {
+  	--sandy: #e8d3a3;
+  	--sunrise: #ffa633;
+  	--ppetal: #3b5a9d;
+  	--dawn: #4fb2aa;
+}
+
+html, body {
+  	width: 100vw;
+  	min-height: 100vh;
+  	margin: 0;
+  	padding: 0;
+}
+
+header {
+	display: grid;
+	grid-template-areas: "contact logo selections";
+	height: 140px;
+}
+
+#header-left {
+	grid-area: contact;
+	background-color: red;
+}
+
+h1 {
+	grid-area: logo;
+	background-color: var(--ppetal);
+	height: 100%;
+	top: 0px;
+	margin: 0;
+}
+
+#header-right {
+	grid-area: selections;
+	background-color: blue;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	/*flex: 0 1 auto;
+	flex-wrap: wrap;*/
+	height: 75px;
+	background-color: var(--dawn);
+}
+
+ul {
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
