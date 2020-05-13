@@ -12,6 +12,10 @@ html, body {
   	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Libre Caslon Text', serif;
 	text-align: center;
@@ -29,27 +33,15 @@ header {
 	grid-area: contact;
 
 	margin-top: 50px;
-	display: grid;
-	grid-template-rows: 40px 1fr;
-	grid-template-areas: "phone" "hours";
+	display: flex;
+	align-items: center;
 }
 
-#phone {
-	grid-area: phone;
+#phone-link {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-}
-
-#hours {
-	grid-area: hours;
-	text-align: center;
-}
-
-#header-left p {
-	margin: 0;
-	font-size: 0.9em;
 }
 
 #header-center {
@@ -189,6 +181,7 @@ h2 {
 	border-color: black;
 	display: grid;
 	grid-template-rows: 349.33px 1fr;
+	position: relative;
 }
 
 .product img {
@@ -197,7 +190,6 @@ h2 {
 
 .product-name {
 	background-color: black;
-	position: relative;
 }
 
 .product p {
@@ -210,12 +202,28 @@ h2 {
 	background-color: var(--dawn);
 	position: absolute;
 	width: 100%;
-	height: 100%;
 	bottom: 0;
 }
 
-.product-name:hover > .details {
+.product:hover > .details {
 	visibility: visible;
+}
+
+#mission-text {
+	width: 800px;
+	margin: auto;
+}
+
+footer {
+	width: 500px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer p {
+	margin: 0.5em;
 }
 
 a {
