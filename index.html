@@ -4,7 +4,7 @@
 	<title>PetalsForPeace</title>
 	<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital@1&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style2.css">
 
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -12,17 +12,20 @@
 
 <body>
 	<header>
-	  <div id="header-center"><h1><i>PetalsForPeace</i></h1></div>
+	  <div id="header-center">
+	  	<h1>PetalsForPeace</h1>
+	  	<p id="phone-header">(678) 910-1112</p>
+	  </div>
 	  <div id="header-left">
 	  	<a id="phone-link" href="#" style="width: 100%;">
 	  		<i class='fas fa-phone' style='font-size:24px; transform: scaleX(-1);'></i>
-	  		<p style="padding: 0px 5px;">(678) 910-1112</p>
+	  		<p class="icon-spacing">(678) 910-1112</p>
 	  	</a>
 	  </div>
 	  <div id="header-right">
 	  	<a id="cart-link" href="#" style="width: 100%;">
-		  	<i class='fas fa-shopping-cart' style='font-size:24px'></i>
-		  	<p style="padding: 0px 5px;">Cart</p>
+		  	<i class='fas fa-shopping-cart'></i>
+		  	<p class="icon-spacing">Cart</p>
 		</a>
 	  </div>
 	</header>
@@ -41,23 +44,24 @@
 	<div id="banner-container">
 		<div class="banner" id="first-banner">
 			<img class="banner-img" src="https://www.floristpickeringdurham.com/wp-content/uploads/2019/02/Home-Page-Banner-3000x1000.jpeg">
-			<p id="banner-text"><strong><i>Spring is Here!</i></strong></p>
+			<p id="banner-text"><strong>Spring is Here!</strong></p>
 		</div>
 
 		<div id="second-banner">
 			<img src="https://i.insider.com/5a789981dd484a49008b5212?width=1200">
 			<div>
-				<p style="font-size: 4em; margin-top: 10%; margin-bottom: 0;"><i>We Deliver!</i></p>
-				<p style="font-size: 1em;">Just give us a call!</p>
+				<p id="deliver-heading">We Deliver!</p>
+				<p id="deliver-text">Just give us a call!</p>
 			</div>
 		</div>
 	</div>
 	<hr id="second-line">
+
 <!--END BANNERS-->
 
 <!--START COLLECTIONS-->
 	<h2 id="flower">Beautiful Bouquets</h2>
-
+	<hr class="bottom-border">
 	<div id="product-container">
 		<a href="#">
 			<div class="product">
@@ -99,11 +103,12 @@
 			</div>
 		</a>
 	</div>
-	<hr style="margin-top: 2em;">
+	<hr id="flower-vase-divide">
 <!--END COLLECTIONS-->
 
 <!--START VASE-->
 	<h2 id="vase">Vases</h2>
+	<hr id=vase-border" class="bottom-border">
 	<div id="product-container">
 		<a href="#">
 			<div class="product">
@@ -145,11 +150,12 @@
 			</div>
 		</a>
 	</div>
-	<hr style="margin-top: 2em;">
+	<hr id="vase-mission-divide">
 <!--END VASE-->
 
 <!--START MISSION-->
 	<h2 id="mission">Our Mission</h2>
+	<hr class="bottom-border">
 	<div id="mission-text">
 		<p style="font-size: 1.3em; text-align: justify; line-height: 1.5em;">At PetalsForPeace, we strive to provide the best flowers that will bring smiles to the ones you love. 
 		Our flowers are grown in the richest soil by local farmers in the Georgia community, and they are handled with 
@@ -174,6 +180,5 @@
 		  	<p>Sun: 12PM-5PM</p>
 		</div>
 	</footer>
-
 </body>
 </html>
